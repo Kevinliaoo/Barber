@@ -1,0 +1,36 @@
+/* Mobile */
+.container {
+  display: none;
+  background-color: red;
+  padding: 25px;
+  flex-direction: column;
+}
+
+.container a {
+  display: none;
+}
+
+#menuIcon {
+  color: white;
+  position: absolute;
+  margin-left: 20px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #menuIcon {
+    display: none;
+  }
+
+  .container a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+		<link rel="stylesheet" href="css/header.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div class="banner" id="banner">
+			Hello & Good <span id="timeOfDay"></span>
+		</div>
+
+		<img
+			id="menuIcon"
+			src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png"
+		/>
+
+		<header id="htmlNavigation">
+			<div class="container">
+				<a href="index.html">Home</a>
+				<a href="#">Contact us</a>
+				<a href="#">Services</a>
+				<a href="#">Gallery</a>
+				<a href="#">Covid 19</a>
+			</div>
+		</header>
+		<!-- /HEADER -->
+
+		<!-- MAIN -->
+		<div class="main">
+			<form class="formContainer">
+				<input id="nameInput" placeholder="Name: " />
+				<p id="nameMsg"></p>
+				<input id="mailInput" placeholder="Email: " />
+				<p id="mailMsg"></p>
+				<textarea
+					id="msgField"
+					placeholder="How can we help you?"
+				></textarea>
+				<p id="msgMsg"></p>
+				<button id="submitBtn">Send!!</button>
+				<p id="submitMsg"></p>
+			</form>
+		</div>
+		<!-- /MAIN -->
+
+		<!-- FOOTER -->
+		<footer>
+			Cut-Rite Barbershop <i class="fas fa-running"></i> | All Rights
+			Reserved &copy; <span id="thisYear"></span>
+		</footer>
+		<!-- /FOOTER -->
+
+		<script src="js/contact.js"></script>
+	</body>
+</html>

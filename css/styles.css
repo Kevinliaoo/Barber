@@ -1,0 +1,216 @@
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;  
+
+  /* for the footer */
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+/* navigation */
+.navbar {
+  background-color:#46acc2;
+  display: flex;
+  padding: 16px;
+  color: white;
+}
+
+.logo {
+  max-width: 10rem;
+  height: auto;
+}
+
+.navbar,
+.navbar__items {
+  flex-direction: column;  
+}
+
+.navbar__items {
+  display: none;
+}
+
+.navbar__link {
+  margin: .5rem 0;
+}
+
+.navbar__toggleShow {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__link--toggle {
+  align-self: flex-end;
+  display: initial;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* hero */
+.page-top {
+  background-image: 
+  linear-gradient(
+    to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.1)),
+    url('https://images.alphacoders.com/228/228801.jpg');
+  height: 30vh;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-top h1, i {
+  color: white;
+}
+
+/* banner */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+}
+
+.isChrome {
+  background: lightblue;
+}
+.isFirefox {
+  background: coral;
+}
+.isIE {
+  background: plum;
+}
+.dunno {
+  background: darkred;
+  color: white;
+}
+
+.banner span {
+  font-style: italic;
+  font-weight: bold;
+  margin-left: .2rem;
+}
+
+.banner span::after {
+  content: '!';
+}
+
+/* products */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 50%;
+  padding: 10px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, .7);
+}
+
+.product__details {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product__title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product__title h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+}
+
+.product__title span.price {
+  font-size: 1rem;
+}
+
+.product__title span.price::before {
+  content: '$';
+}
+
+h5.product__title, .price {
+  font-weight: bold;
+}
+
+p.product__desc {
+  font-size: .9rem;
+  line-height: 1.5rem;
+}
+
+
+
+
+
+/* footer */
+footer {
+  background: lightslategray;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: .9rem;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3rem;
+}
+
+/* 768px Media Query */
+@media (min-width: 768px) {
+  .navbar,
+  .navbar__items {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar__link {
+    padding-right: 8px;
+  }
+
+  .navbar__items {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .navbar__link--toggle {
+    display: none;
+  }
+}
