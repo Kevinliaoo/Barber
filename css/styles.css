@@ -180,6 +180,7 @@ p.product__desc {
 
 /* footer */
 footer {
+  display: inline;
   background: lightslategray;
   text-align: center;
   color: white;

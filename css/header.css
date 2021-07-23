@@ -1,19 +1,40 @@
 /* Mobile */
 .container {
-  display: none;
+  display: flex;
+  flex-direction: column;
   background-color: red;
   padding: 25px;
-  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
 }
 
-.container a {
-  display: none;
+a {
+  display: inline;
+  text-decoration: none;
+  color: white;
 }
 
 #menuIcon {
   color: white;
   position: absolute;
   margin-left: 20px;
+  z-index: 1;
+}
+
+#htmlNavigation {
+  display: none; /* This property has to be changed when the button is clicked */
+  position: fixed;
+  top: 0;
+  background-color: red;
+  height: 100vh; 
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dissappear {
+  display: none;
 }
 
 /* Desktop */
@@ -30,7 +51,16 @@
 
   .container a {
     display: inline;
-    text-decoration: none;
-    color: white;
+  }
+
+  #openMenu {
+    display: none;
+  }
+
+  #htmlNavigation {
+    display: inline;
+    height: 100%; 
+    width: 100%;
+    position: relative;
   }
 }
